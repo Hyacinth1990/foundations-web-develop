@@ -1,0 +1,44 @@
+.Menu {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+.Images {
+    display: flex;
+    flex-direction: row;
+}
+img {
+   width: 50%;
+   height: auto;
+}
+
+.Menufooter {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .Menu {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .Menufooter {
+        display: none;
+    }
+    .Images {
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        width: 100%;
+        height: none;
+    }
+}
